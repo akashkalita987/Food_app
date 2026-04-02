@@ -16,16 +16,20 @@ class HomePage extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
         ),
-        backgroundColor: Colors.white,
+        backgroundColor:  Color(0xffF74040),
         elevation: 0,
         centerTitle: true,
         leading: Container(
             margin: EdgeInsets.all(10),
+            alignment: Alignment.center,
             decoration: BoxDecoration(
               color: Color(0xffF74040),
               borderRadius: BorderRadius.circular(10)
             ),
-            child: SvgPicture.asset('assets/icons/arrow - Left 2.svg'),
+            child: SvgPicture.asset('assets/icons/arrow.svg',
+                height: 20,
+                width: 20,
+            ),
         ),
       ),
     );
