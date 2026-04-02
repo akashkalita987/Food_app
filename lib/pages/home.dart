@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
-
-  get Leading => null;
 
   @override
   Widget build(BuildContext context) {
@@ -21,12 +20,13 @@ class HomePage extends StatelessWidget {
         elevation: 0,
         centerTitle: true,
         leading: Container(
-          margin: EdgeInsets.all(10),
-          decoration: BoxDecoration(
-            color: Colors.black,
-            borderRadius: BorderRadius.circular(10)
-          ),
-        )
+            margin: EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              color: Color(0xffF74040),
+              borderRadius: BorderRadius.circular(10)
+            ),
+            child: SvgPicture.asset('assets/icons/arrow - Left 2.svg'),
+        ),
       ),
     );
   }
